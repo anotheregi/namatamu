@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nama tamu undangan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ketik nama tamu undangan jir</h1>
+    <input type="text" id="text-custom" placeholder="egi bjir">
+    <button onclick="generateText()">Generate</button>
+    <p id="hasil"></p>
+  </div>
+
+  <script>
+    function generateText() {
+      var template = "https://anotheregi.github.io/alinisa?to=";
+      var textCustom = document.getElementById("text-custom").value;
+      var hasil = template + " " + textCustom;
+      document.getElementById("hasil").innerHTML = hasil;
+    }
+  </script>
+</body>
+</html>
